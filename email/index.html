@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Jackson Snyder -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Halloween Store</title>
+	<link rel="stylesheet" href="../styles/main.css">
+	<style>
+		label {display: block; width: 100px; text-align: right; float: left;}
+		input {margin-left: 2%; margin-bottom: .5em; width: 380px;}
+		#Subscribe {margin-left: 100px; 
+			background-color: orange; 
+			border: 1px solid black;
+		width: 120px;}
+		h1 { margin-bottom: 0;}
+	</style>
+</head>
+
+<body>
+
+  <header>
+  	<a href="../index.html"><img src="../images/pumpkin.gif" alt="Pumpkin"></a>
+   	<h2>The Halloween Store</h2>
+   	<h3>For the little Goblin in all of us!</h3>
+  </header>
+  <nav>
+  	<ul>
+    	<li><a href="../index.html">Home</a></li>
+    	<li><a href="../products/index.html">Product List</a></li>
+    	<li><a href="../personal/index.html">Personal</a></li>
+    	<li><a href="../decorating/index.html">Decorating Ideas</a></li>
+    	<li><a href="index.html" id="current">Join Email</a></li>
+	</ul>
+  </nav>
+  <main>
+	<section>
+    	<h1>Please enter the following information:</h1>
+		<form action="subscribe.html" method="get">
+
+			<label for="firstname">First name:</label>
+			<input type="text" name="firstname" id="firstname" required autofocus><br>
+
+			<label for="lastname">Last name:</label>
+			<input type="text" name="lastname" id="lastname" required><br>
+
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required><br>
+
+			<label for="zip">Zip Code:</label>
+			<input type="text" name="zip" id="zip" placeholder="Optional but appreciated: 222222"><br>
+
+			<button id="Subscribe">
+				Subscribe
+			</button>
+		</form>
+	</section>
+	<aside>
+   		<ul>
+   			<li><a href="../products/props.html">Props</a></li>
+   			<li><a href="../products/costumes.html">Costumes</a></li>
+   			<li><a href="../products/special.html">Special FX</a></li>
+   			<li><a href="../products/masks.html">Masks</a></li>
+		</ul>
+	</aside>
+  </main>
+
+  <footer>
+	&copy;2024 Ben Murach
+  </footer>
+</body>
+</html>

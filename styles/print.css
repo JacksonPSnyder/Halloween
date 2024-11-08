@@ -1,0 +1,32 @@
+/*Jackson Snyder*/
+section p {
+    font-family: sans-serif;
+}
+h1 {
+    font-family: "Lucida Sans";
+}
+body {
+    box-shadow: none;
+    border: none;
+    width: auto;
+    margin: .5in;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+aside {
+    display: none;
+}
+nav {
+    display: none;
+}
+header {
+    display: none;
+}
+footer {
+    display: none;
+}
+section {
+    margin: 1in;
+}
+h5 {
+    display: none;
+}

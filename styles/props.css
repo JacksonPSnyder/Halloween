@@ -1,0 +1,190 @@
+/*Jackson Snyder*/
+
+a:link, a:visited {
+	color: orange;
+	font-weight: bold;
+}
+a:hover, a:focus{
+	color: purple;
+}
+
+ul{
+	line-height: 1.5;
+	margin-top: 0;
+	padding-left: 20px;
+}
+	
+html{
+	background-color: black;
+	background-image: url("../images/bats.gif");
+}
+body {
+	font-family: "Century Gothic", verdana, sans-serif;
+	max-width: 880px;
+	width: 95%;
+	margin: .625rem auto; /*10px auto;*/
+	border: 3px solid black;
+	box-shadow: 10px 6px 5px 5px gray;
+	background-color: white;
+	display: grid;
+	grid-template-areas: 
+		"header header 	header 	header 	header"
+		"nav 	nav 	nav 	nav 	nav"
+		"aside	aside	section	section	section"
+		"footer	footer	footer	footer	footer";
+}
+header {
+	grid-area: header;
+	border-bottom: 2px solid black;
+	background: linear-gradient(to bottom right, black, white 75%, orange);
+}
+header img{
+	float: left;
+	padding: .3125rem 1.7% 0;/*5px 15px 0;*/
+	max-width: 85px;
+	min-width: 40px;
+	width: 9.66%;
+	}
+
+header h2{
+	font-size: 230%;
+	text-indent: 2.84%;/*25px;*/
+	color: orange;
+	font-style: italic;
+	text-shadow: 5px 5px 5px black;
+	margin: 0;
+}
+header h3{
+	font-size: 125%;
+	text-indent: 2.84%;/*25px;*/
+	margin-top: 0;
+}
+nav {
+	grid-area: nav;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display:grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+/*nav li {/*
+	/*width: 20%;/* /*176px;*/
+nav a {
+	background-color:black;
+	text-align: center;
+	padding: .3125rem; /*5px 0;*/
+	text-decoration: none;
+	display: block;
+}
+nav a#current{
+	color: orange;
+}
+nav a:link, nav a:visited{
+	color: white;
+}
+nav a:hover, nav a:focus{
+	background-color: gray;
+}
+main {
+	padding: .9375rem 2.84%  1.5625rem; /*15px 25px 25px;*/
+}
+
+section {
+	grid-area: section;
+	width: 75%; /*640px;*/
+	margin-top: .9375rem; /*15px;*/
+	margin-left: 70px;
+}
+section img {
+	max-width: 154px;
+	width: 17.5%;
+}
+h1 {
+	font-size:140%;
+	margin-bottom: 0;
+	margin-top: 0;
+	
+}
+h1:first-letter{ font-size: 150%;}
+
+h1+p {margin-top: 0;}
+
+main h2, main h3{
+	margin-bottom: 0;
+}
+
+main h3+p{
+ margin-top: 0;
+ }
+ 
+aside {	
+	width: 25%; /*160px;*/
+	margin-top: 27.5px; /*40px;*/
+	grid-area: aside;
+	width: 25%;
+}
+aside a {
+	display:block;
+	width: 100%;
+}
+aside li {
+	border: 1px solid black;
+	list-style-type:none;
+	padding: .3125rem 0 .3125rem .5681%; /*5px 0 5px 5px;*/
+	background-color: orange;
+	width: 150px;
+}
+aside a:link, aside a:visited {
+	color: black;
+	text-decoration: none;
+} 
+aside a:hover, aside a:focus {
+	text-decoration: underline;
+	color: purple;
+} 
+footer{ 
+	font-size: 80%; 
+	text-align:center;
+	border-top: 2px solid black;
+	background: linear-gradient(to top right, orange, white 75%, black);
+	padding: .625rem 1.136%; /*10px;*/
+	grid-area: footer;
+}
+
+ @media only screen and (max-width: 428px) {
+	html {background-image: none;}
+	body {
+		box-shadow: none;
+		grid-template-areas:
+		"header"
+		"nav"
+		"nav"
+		"nav"
+		"nav"
+		"nav"
+		"section"
+		"aside"
+		"footer" ;
+	}
+	header {
+		font-size: 75%;
+	}
+	nav {
+		display: grid;
+		grid-template-columns: none ;
+		grid-template-rows: 100% 100% 100% 100% 100%;
+	}
+	aside {
+		align-self: center;
+		margin-bottom: .5rem;
+	}
+	aside li {
+		align-items: center;
+	}
+}
+
+
+
+	
